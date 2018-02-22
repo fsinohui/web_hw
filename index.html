@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,8 +12,8 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <hr style="background-color: white">
-        <a class="navbar-brand" href="index.html" style="background-color: aqua;">Latitude</a>
+        
+        <a class="navbar-brand" href="index.html" style="background-color: LightSeaGreen; color: white">Latitude</a>
       </div>
 
         <ul class="nav navbar-nav navbar-right">
@@ -23,8 +23,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temp.html">Max Temperature</a></li>
-              <li><a href="humidity.html">Humidity</a></li>
-              <li><a href="cloudiness.html">Cloudiness</a></li>
+              <li><a href="humid.html">Humidity</a></li>
+              <li><a href="clouds.html">Cloudiness</a></li>
               <li><a href="windspeed.html">Wind Speed</a></li>
             </ul>
           </li>
@@ -35,47 +35,49 @@
     <!-- /.container-fluid -->
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="thumbnail">
-          <div class="caption">
-            <div class="body" style="background-color:white;">
-              <h3 >Summary: Latitude vs. X</h3>
-              <br>
-              <p><img src="Temp_vs_Lat.png" alt="Temp_vs_Lat.png" align="left" hspace="10" height="225" width="275"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-              <br>
-              <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+  <div class="container-fluid">
+      <div class="row">
+          <!-- Left Panel  -->
+          <div class="col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-body" style="background-color: white">
+                    <h3 >Summary: Latitude vs. X</h3>
+                    <hr style="background: gray; height: 1px;border-radius: 0px; ">
+                    <p><img src="Temp_vs_Lat.png" alt="Temp_vs_Lat.png" align="left" hspace="10" height="225" width="275"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <br>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- Right Panel -->
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+            <div class="panel-body" style="background-color: white">
+              <h3>Visualizations</h3>
+              <hr style="background: gray; height: 1px;border-radius: 0px; ">
+              <table>
+                <tr>
+                  <td>
+                    <img src="Temp_vs_Lat.png" alt="Temp_vs_Lat.png" height="150" width="150">
+                  </td>
+                  <td>
+                    <img src="Humidity_vs_Lat.png" alt="Humidity_vs_Lat.png" height="150" width="150">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Cloudiness_vs_Lat.png" alt="Cloudiness_vs_Lat.png" height="150" width="150">
+                  </td>
+                  <td>
+                    <img src="Wind_vs_Lat.png" alt="Wind_vs_Lat.png" height="150" width="150">
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <div class="caption">
-            <h3>Visualizations</h3>
-            <br>
-            <table>
-              <tr>
-                <td>
-                  <img src="Temp_vs_Lat.png" alt="Temp_vs_Lat.png" height="150" width="150">
-                </td>
-                <td>
-                  <img src="Humidity_vs_Lat.png" alt="Humidity_vs_Lat.png" height="150" width="150">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="Cloudiness_vs_Lat.png" alt="Cloudiness_vs_Lat.png" height="150" width="150">
-                </td>
-                <td>
-                  <img src="Wind_vs_Lat.png" alt="Wind_vs_Lat.png" height="150" width="150">
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
+      
         </div>
       </div>
     </div>
