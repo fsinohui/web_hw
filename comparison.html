@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude </title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:white;">>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+        <a class="navbar-brand" href="index.html" style="background-color: LightSeaGreen; color: white">Latitude</a>
+      </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temp.html">Max Temperature</a></li>
+              <li><a href="humid.html">Humidity</a></li>
+              <li><a href="clouds.html">Cloudiness</a></li>
+              <li><a href="wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  </div>
+    <!-- /.container-fluid -->
+  </nav>
+<!--Page Title  -->
+            <div class="jumbotron text-center">
+                <h1 style="color: LightSeaGreen">Comparison View</h1>
+                <p>Click on any plot for detail</p> 
+            </div>
+            <div class = "container">
+                    <div class = "panel">
+                            <div class="row"> 
+                                    <div class="col-sm-6">
+                                        <h3 class=header> Temperature vs Latitude <a href="temp.html"><img src="Temp_vs_Lat.png" style="width:100%"></a></h3> 
+                                        <h3 class=header> Humidity vs Latitude <a href="humid.html"><img src="Humidity_vs_Lat.png" style="width:100%"></a></h3> 
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3 class=header> Cloud Cover vs Latitude <a href="clouds.html"><img src="Cloudiness_vs_Lat.png" style="width:100%"></a></h3> 
+                                        <h3 class=header> Wind Speed vs Latitude <a href="wind.html"><img src="Wind_vs_Lat.png" style="width:100%"></a></h3> 
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+            <footer class="footer">
+                    <div class="container">
+                            <a href="index.html"><span class="text-muted">github.com/fsinohui</span></a>
+                    </div>
+            </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
